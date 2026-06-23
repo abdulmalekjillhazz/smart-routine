@@ -21,7 +21,7 @@ export function RoutineList({ routines, onUpdate, onDelete }) {
 
   return (
     <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900 dark:text-white text-sm">Today's Routines</h3>
+      <h3 className="font-semibold text-slate-900 dark:text-white text-sm">Today‘s Routines</h3>
       {todayRoutines.map(r => (
         <RoutineCard key={r.id} routine={r} onUpdate={onUpdate} onDelete={onDelete} />
       ))}

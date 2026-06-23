@@ -9,7 +9,7 @@ export function TodayProgressCard({ routines }) {
   return (
     <Card>
       <div className="flex items-center justify-between mb-3">
-        <h3 className="font-semibold text-slate-900 dark:text-white">Today's Progress</h3>
+        <h3 className="font-semibold text-slate-900 dark:text-white">Today‘s Progress</h3>
         <span className="text-2xl font-bold text-blue-500">{percent}%</span>
       </div>
       <ProgressBar value={percent} max={100} className="mb-3" />

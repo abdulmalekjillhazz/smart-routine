@@ -16,7 +16,7 @@ export function DayOverviewStrip({ routines }) {
 
   return (
     <div>
-      <h3 className="font-semibold text-slate-900 dark:text-white mb-3 text-sm">Today's Schedule</h3>
+      <h3 className="font-semibold text-slate-900 dark:text-white mb-3 text-sm">Today‘s Schedule</h3>
       <div className="relative h-8 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
         {todayRoutines.map(r => {
           const cat = defaultCategories.find(c => c.id === r.category)
