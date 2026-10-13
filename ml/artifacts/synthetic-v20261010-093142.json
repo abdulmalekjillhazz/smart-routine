@@ -1,0 +1,73 @@
+{
+  "version": "synthetic-v20261010-093142",
+  "createdAt": "2026-10-10T09:31:42.029264+00:00",
+  "status": "synthetic",
+  "consentVersion": "model-training-v1",
+  "features": [
+    "early",
+    "start_hour",
+    "duration_min",
+    "weekday",
+    "priority_low",
+    "priority_medium"
+  ],
+  "mean": [
+    0.3298639219767935,
+    12.3479048610308,
+    48.03631317219845,
+    2.9525847114606223,
+    0.33726533287074517,
+    0.3298639219767935
+  ],
+  "scale": [
+    0.4701634981098399,
+    5.560559698775669,
+    25.785915719268132,
+    1.9914786973484933,
+    0.4727762981731748,
+    0.4701634981098399
+  ],
+  "coefficients": [
+    0.9361529043231347,
+    0.034774743436028724,
+    -0.021769848390092793,
+    -0.01128642234208256,
+    0.49873796415642757,
+    -0.007082649223777184
+  ],
+  "intercept": -0.7381398937044122,
+  "chosenC": 1.0,
+  "metrics": {
+    "auc": 0.7439786889998041,
+    "brier": 0.18593109641862793,
+    "calibrationSlope": 0.940201308073959,
+    "calibrationIntercept": -0.019412160370349887,
+    "expectedCalibrationError": 0.014401999672631524,
+    "holdoutRows": 6480,
+    "holdoutMissRate": 0.3552469135802469,
+    "baselines": {
+      "constant": {
+        "brier": 0.2290734106507242,
+        "auc": 0.5
+      },
+      "perPriority": {
+        "brier": 0.21870411322420158,
+        "auc": 0.6119184142330082
+      }
+    }
+  },
+  "trainingWindow": {
+    "start": "2026-06-01",
+    "cutoff": "2026-08-12",
+    "end": "2026-08-29",
+    "trainRows": 25941,
+    "testRows": 6480
+  },
+  "rows": 32421,
+  "decision": {
+    "status": "synthetic",
+    "reasons": [
+      "synthetic data: for testing the pipeline only"
+    ]
+  }
+}

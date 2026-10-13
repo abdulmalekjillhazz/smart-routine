@@ -1,0 +1,30 @@
+{
+  "slug": "morning-plan",
+  "title": {
+    "en": "Plan your morning in five minutes",
+    "bn": "পাঁচ মিনিটে সকালের পরিকল্পনা করুন"
+  },
+  "body": {
+    "en": "Each morning, write down the three routines that matter most today. Keep the list short. A short plan is easier to follow than a long one.",
+    "bn": "প্রতিদিন সকালে আজকের সবচেয়ে গুরুত্বপূর্ণ তিনটি রুটিন লিখুন। তালিকা ছোট রাখুন। ছোট পরিকল্পনা অনুসরণ করা সহজ।"
+  },
+  "vocabulary": [
+    {
+      "word": "routine",
+      "meaning": { "en": "something you do regularly", "bn": "নিয়মিত করা একটি কাজ" }
+    }
+  ],
+  "quiz": [
+    {
+      "question": { "en": "How many routines should a morning plan list?", "bn": "সকালের পরিকল্পনায় কয়টি রুটিন লেখা উচিত?" },
+      "options": [
+        { "en": "Ten or more", "bn": "দশটি বা তার বেশি" },
+        { "en": "One hundred", "bn": "একশটি" },
+        { "en": "Three", "bn": "তিনটি" },
+        { "en": "As many as possible", "bn": "যতটা সম্ভব" }
+      ],
+      "answerIndex": 2
+    }
+  ],
+  "aiDrafted": false
+}

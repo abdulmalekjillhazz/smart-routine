@@ -1,0 +1,176 @@
+// User-facing copy. Bangla uses formal address (আপনি). Bangla is marked draft until a native speaker reviews it.
+// Copy must match the product: describe only features that exist, or say clearly that they are coming.
+export const DICTIONARIES = {
+  en: {
+    draft: false,
+    brand: 'Smart Routine',
+    nav: {
+      label: 'Main',
+      home: 'Home',
+      lessons: 'Lessons',
+      about: 'About',
+      help: 'Help',
+      app: 'Open the app',
+      menu: 'Menu',
+      close: 'Close menu',
+    },
+    home: {
+      title: 'Daily Routine Planner and Habit Coach',
+      description: 'Short habit lessons in Bangla and English, read on any phone. The Smart Routine planner app, which plans each day in time blocks, is being built.',
+      h1: 'Your day, one routine at a time',
+      lead: 'Short, practical lessons on routines, sleep and focus. The daily planner app is being built and will appear here when it is ready.',
+      ctaLessons: 'Read the lessons',
+      ctaApp: 'Open the app',
+    },
+    lessons: {
+      title: 'Habit Lessons in Bangla and English',
+      description: 'Short, practical lessons on routines, sleep, study and focus. Read them free in Bangla or English, on any phone. Quizzes will come with the app.',
+      h1: 'Habit lessons',
+      empty: 'No lessons have been published yet.',
+      unavailable: 'Lessons cannot be shown right now. Please try again in a few minutes.',
+      vocabulary: 'Words to know',
+      quizCta: 'Quizzes will be available in the app once it is ready.',
+      back: 'Back to all lessons',
+      lessonUnavailable: 'This lesson cannot be shown right now. Please try again in a few minutes.',
+    },
+    about: {
+      title: 'About Smart Routine',
+      description: 'Smart Routine helps people plan their day in simple steps. Learn who builds it, how it treats your data, and how to reach the team behind it today.',
+      h1: 'About Smart Routine',
+      body: [
+        'Smart Routine is a daily planner for people who want a calm, simple way to build habits.',
+        'It is built for everyday use on phones, including older phones and slow connections.',
+      ],
+    },
+    help: {
+      title: 'Help and Support',
+      description: 'Help with Smart Routine: what the app will do, offline use, reminders, lessons, and how account deletion will work. Common answers are below.',
+      h1: 'Help',
+      body: [
+        'Reminders will ask for permission to show notifications in your browser. You can use the app without them.',
+        'The app will keep working when you are offline. Your changes will wait and be sent when the connection returns.',
+        'Account deletion will be in the app settings. Your data will be removed permanently 30 days later.',
+      ],
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      description: 'How Smart Routine collects, uses, exports and deletes personal data. Read what we store, why we store it, and the choices you have over your information.',
+      h1: 'Privacy policy',
+      body: [
+        'Draft. This policy needs legal review before launch.',
+        'We store your account details, your routines, and your completions, so the app can work.',
+        'Model training is optional. We use it only with your consent, and only with pseudonymised data.',
+        'You can export your data after entering your password, and you can delete your account.',
+      ],
+    },
+    terms: {
+      title: 'Terms of Use',
+      description: 'The terms for using Smart Routine, including your duties, what the service offers, and how we handle changes, removal and AI answers that can be wrong.',
+      h1: 'Terms of use',
+      body: [
+        'Draft. These terms need legal review before launch.',
+        'Smart Routine is provided as it is. The AI features, when available, can be wrong.',
+      ],
+    },
+    footer: {
+      note: 'Smart Routine',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      help: 'Help',
+      draftNotice: 'Draft copy: pending review by a Bangla speaker.',
+    },
+    appStub: {
+      title: 'Open the app',
+      description: 'The Smart Routine app screens are not part of this public site.',
+      h1: 'The app is coming soon',
+      body: 'The app screens are being built. Check back soon.',
+    },
+  },
+  bn: {
+    draft: true,
+    brand: 'Smart Routine',
+    nav: {
+      label: 'প্রধান',
+      home: 'হোম',
+      lessons: 'পাঠসমূহ',
+      about: 'আমাদের সম্পর্কে',
+      help: 'সহায়তা',
+      app: 'অ্যাপ খুলুন',
+      menu: 'মেনু',
+      close: 'মেনু বন্ধ করুন',
+    },
+    home: {
+      title: 'দৈনিক রুটিন পরিকল্পনা ও অভ্যাস কোচ',
+      description: 'সহজ ভাষায় অভ্যাস-বিষয়ক পাঠ, বাংলা ও ইংরেজিতে, যেকোনো ফোনে পড়ুন। দৈনিক পরিকল্পনার অ্যাপ তৈরি হচ্ছে, প্রস্তুত হলে এখানেই খুলবে ও সময়মতো দিন সাজানো যাবে।',
+      h1: 'আপনার দিন, এক একটি রুটিনে',
+      lead: 'রুটিন, ঘুম ও মনোযোগ নিয়ে সহজ, কাজের পাঠ। দৈনিক পরিকল্পনার অ্যাপ তৈরি হচ্ছে, প্রস্তুত হলে এখানে জানানো হবে।',
+      ctaLessons: 'পাঠ দেখুন',
+      ctaApp: 'অ্যাপ খুলুন',
+    },
+    lessons: {
+      title: 'অভ্যাস-বিষয়ক পাঠ, বাংলা ও ইংরেজিতে',
+      description: 'রুটিন, ঘুম, পড়াশোনা ও মনোযোগ নিয়ে ছোট ও কার্যকর পাঠ। বাংলা ও ইংরেজিতে বিনামূল্যে পড়ুন, যেকোনো ফোনে, আপনার সুবিধামতো সময়ে। কুইজ অ্যাপের সঙ্গে আসবে।',
+      h1: 'অভ্যাস-বিষয়ক পাঠ',
+      empty: 'এখনো কোনো পাঠ প্রকাশিত হয়নি।',
+      unavailable: 'এখন পাঠ দেখানো যাচ্ছে না। কয়েক মিনিট পরে আবার চেষ্টা করুন।',
+      vocabulary: 'জেনে রাখুন',
+      quizCta: 'অ্যাপ প্রস্তুত হলে সেখানে কুইজ দেওয়া যাবে।',
+      back: 'সব পাঠে ফিরে যান',
+      lessonUnavailable: 'এই পাঠটি এখন দেখানো যাচ্ছে না। কয়েক মিনিট পরে আবার চেষ্টা করুন।',
+    },
+    about: {
+      title: 'Smart Routine সম্পর্কে',
+      description: 'Smart Routine সহজ ধাপে মানুষকে তাদের দিন পরিকল্পনা করতে সাহায্য করে। কারা এটি তৈরি করছে, আপনার তথ্য নিয়ে কী হয় এবং কীভাবে যোগাযোগ করবেন, তা জানুন।',
+      h1: 'Smart Routine সম্পর্কে',
+      body: [
+        'Smart Routine এমন মানুষদের জন্য একটি দৈনিক পরিকল্পনাকারী, যারা শান্ত ও সহজ উপায়ে অভ্যাস গড়তে চান।',
+        'এটি ফোনে প্রতিদিনের ব্যবহারের জন্য তৈরি, এমনকি পুরোনো ফোন ও ধীর ইন্টারনেটেও।',
+      ],
+    },
+    help: {
+      title: 'সহায়তা ও সাপোর্ট',
+      description: 'Smart Routine নিয়ে সহায়তা: অ্যাপে কী থাকবে, অফলাইন ব্যবহার, রিমাইন্ডার, পাঠ, এবং অ্যাকাউন্ট মোছার নিয়ম। সাধারণ প্রশ্নের উত্তর এই পাতায় আছে।',
+      h1: 'সহায়তা',
+      body: [
+        'রিমাইন্ডারের জন্য আপনার ব্রাউজারে বিজ্ঞপ্তির অনুমতি চাওয়া হবে। অনুমতি না দিলেও অ্যাপ ব্যবহার করা যাবে।',
+        'ইন্টারনেট না থাকলেও অ্যাপ চলবে। আপনার পরিবর্তন অপেক্ষা করবে এবং সংযোগ ফিরে এলে পাঠানো হবে।',
+        'অ্যাকাউন্ট মোছার সুবিধা অ্যাপের সেটিংসে থাকবে। ৩০ দিন পর আপনার তথ্য স্থায়ীভাবে মুছে যাবে।',
+      ],
+    },
+    privacy: {
+      title: 'গোপনীয়তা নীতি',
+      description: 'Smart Routine কীভাবে ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার, রপ্তানি ও মুছে ফেলে, তা পড়ুন। কী জমা থাকে, কেন থাকে, এবং আপনার তথ্যের উপর আপনার কী কী পছন্দ আছে জানুন।',
+      h1: 'গোপনীয়তা নীতি',
+      body: [
+        'খসড়া। প্রকাশের আগে আইনি পর্যালোচনা লাগবে।',
+        'অ্যাপ চালানোর জন্য আমরা আপনার অ্যাকাউন্ট, রুটিন ও সম্পন্ন তথ্য রাখি।',
+        'মডেল প্রশিক্ষণ ঐচ্ছিক। আপনার সম্মতি থাকলেই এবং শুধু ছদ্মনামকৃত তথ্য দিয়ে এটি ব্যবহার হয়।',
+        'পাসওয়ার্ড দিয়ে আপনি আপনার তথ্য রপ্তানি করতে এবং অ্যাকাউন্ট মুছতে পারেন।',
+      ],
+    },
+    terms: {
+      title: 'ব্যবহারের শর্তাবলি',
+      description: 'Smart Routine ব্যবহারের শর্তাবলি: আপনার দায়িত্ব, সেবার বিবরণ, পরিবর্তন ও অপসারণের নিয়ম, এবং এআই-এর উত্তর ভুল হতে পারে এমন বিষয়। বিস্তারিত এই পাতায় আছে।',
+      h1: 'ব্যবহারের শর্তাবলি',
+      body: [
+        'খসড়া। প্রকাশের আগে আইনি পর্যালোচনা লাগবে।',
+        'Smart Routine যেমন আছে তেমনই দেওয়া হয়। এআই সুবিধা থাকলে তার উত্তর ভুল হতে পারে।',
+      ],
+    },
+    footer: {
+      note: 'Smart Routine',
+      privacy: 'গোপনীয়তা',
+      terms: 'শর্তাবলি',
+      help: 'সহায়তা',
+      draftNotice: 'এই বাংলা লেখাটি এখনো একজন বাংলাভাষীর পর্যালোচনার অপেক্ষায়।',
+    },
+    appStub: {
+      title: 'অ্যাপ খুলুন',
+      description: 'Smart Routine অ্যাপের পর্দাগুলো এই সর্বজনীন সাইটের অংশ নয়।',
+      h1: 'অ্যাপ শীঘ্রই আসছে',
+      body: 'অ্যাপের পর্দাগুলো তৈরি হচ্ছে। কিছুক্ষণ পরে আবার দেখুন।',
+    },
+  },
+};
+
+export const getDictionary = (lang) => DICTIONARIES[lang];

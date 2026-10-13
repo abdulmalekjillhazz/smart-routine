@@ -1,0 +1,855 @@
+{
+  "version": "synthetic-v20261010-093142",
+  "cases": [
+    {
+      "routine": {
+        "startTime": "20:35",
+        "endTime": "21:50",
+        "priority": "low"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 20,
+        "duration_min": 75,
+        "weekday": 2,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.34066026702874264
+    },
+    {
+      "routine": {
+        "startTime": "05:38",
+        "endTime": "07:42",
+        "priority": "low"
+      },
+      "weekday": 0,
+      "features": {
+        "early": 1,
+        "start_hour": 5,
+        "duration_min": 124,
+        "weekday": 0,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.769754906245984
+    },
+    {
+      "routine": {
+        "startTime": "05:20",
+        "endTime": "08:01",
+        "priority": "low"
+      },
+      "weekday": 0,
+      "features": {
+        "early": 1,
+        "start_hour": 5,
+        "duration_min": 161,
+        "weekday": 0,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.7641720445670523
+    },
+    {
+      "routine": {
+        "startTime": "19:44",
+        "endTime": "22:21",
+        "priority": "medium"
+      },
+      "weekday": 0,
+      "features": {
+        "early": 0,
+        "start_hour": 19,
+        "duration_min": 157,
+        "weekday": 0,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.1425245159880983
+    },
+    {
+      "routine": {
+        "startTime": "08:32",
+        "endTime": "08:54",
+        "priority": "medium"
+      },
+      "weekday": 3,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 22,
+        "weekday": 3,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14600325744250833
+    },
+    {
+      "routine": {
+        "startTime": "09:27",
+        "endTime": "11:10",
+        "priority": "medium"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 9,
+        "duration_min": 103,
+        "weekday": 1,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13978288249387283
+    },
+    {
+      "routine": {
+        "startTime": "13:14",
+        "endTime": "15:42",
+        "priority": "high"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 13,
+        "duration_min": 148,
+        "weekday": 6,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.13665638654719156
+    },
+    {
+      "routine": {
+        "startTime": "11:39",
+        "endTime": "14:08",
+        "priority": "medium"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 11,
+        "duration_min": 149,
+        "weekday": 6,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13333829425023158
+    },
+    {
+      "routine": {
+        "startTime": "12:02",
+        "endTime": "12:17",
+        "priority": "high"
+      },
+      "weekday": 3,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 15,
+        "weekday": 3,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.15183134571465356
+    },
+    {
+      "routine": {
+        "startTime": "12:23",
+        "endTime": "14:12",
+        "priority": "low"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 109,
+        "weekday": 6,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3182647401611621
+    },
+    {
+      "routine": {
+        "startTime": "12:45",
+        "endTime": "13:35",
+        "priority": "low"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 50,
+        "weekday": 6,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.32916879058652176
+    },
+    {
+      "routine": {
+        "startTime": "19:31",
+        "endTime": "20:17",
+        "priority": "medium"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 19,
+        "duration_min": 46,
+        "weekday": 2,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.15289138630985266
+    },
+    {
+      "routine": {
+        "startTime": "21:16",
+        "endTime": "23:46",
+        "priority": "high"
+      },
+      "weekday": 5,
+      "features": {
+        "early": 0,
+        "start_hour": 21,
+        "duration_min": 150,
+        "weekday": 5,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.14315443213206913
+    },
+    {
+      "routine": {
+        "startTime": "11:47",
+        "endTime": "13:06",
+        "priority": "high"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 11,
+        "duration_min": 79,
+        "weekday": 1,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.14563431836331978
+    },
+    {
+      "routine": {
+        "startTime": "08:59",
+        "endTime": "11:30",
+        "priority": "high"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 151,
+        "weekday": 2,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.1353482710475503
+    },
+    {
+      "routine": {
+        "startTime": "17:39",
+        "endTime": "18:48",
+        "priority": "medium"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 17,
+        "duration_min": 69,
+        "weekday": 2,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14880220151663176
+    },
+    {
+      "routine": {
+        "startTime": "10:05",
+        "endTime": "11:55",
+        "priority": "medium"
+      },
+      "weekday": 5,
+      "features": {
+        "early": 0,
+        "start_hour": 10,
+        "duration_min": 110,
+        "weekday": 5,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13711992332272635
+    },
+    {
+      "routine": {
+        "startTime": "19:35",
+        "endTime": "20:00",
+        "priority": "high"
+      },
+      "weekday": 3,
+      "features": {
+        "early": 0,
+        "start_hour": 19,
+        "duration_min": 25,
+        "weekday": 3,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.1564378263390497
+    },
+    {
+      "routine": {
+        "startTime": "20:23",
+        "endTime": "20:45",
+        "priority": "low"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 20,
+        "duration_min": 22,
+        "weekday": 2,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.35078104657217857
+    },
+    {
+      "routine": {
+        "startTime": "08:25",
+        "endTime": "10:06",
+        "priority": "medium"
+      },
+      "weekday": 3,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 101,
+        "weekday": 3,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13788193293279113
+    },
+    {
+      "routine": {
+        "startTime": "12:48",
+        "endTime": "13:44",
+        "priority": "medium"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 56,
+        "weekday": 2,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14625006259252007
+    },
+    {
+      "routine": {
+        "startTime": "15:48",
+        "endTime": "17:29",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 15,
+        "duration_min": 101,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14247484179182618
+    },
+    {
+      "routine": {
+        "startTime": "05:19",
+        "endTime": "07:59",
+        "priority": "high"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 1,
+        "start_hour": 5,
+        "duration_min": 160,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.5247178407073426
+    },
+    {
+      "routine": {
+        "startTime": "11:54",
+        "endTime": "14:25",
+        "priority": "low"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 11,
+        "duration_min": 151,
+        "weekday": 2,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.31414730326543566
+    },
+    {
+      "routine": {
+        "startTime": "08:15",
+        "endTime": "10:26",
+        "priority": "medium"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 131,
+        "weekday": 6,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13292687548860005
+    },
+    {
+      "routine": {
+        "startTime": "14:01",
+        "endTime": "14:51",
+        "priority": "low"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 14,
+        "duration_min": 50,
+        "weekday": 1,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3382500247326908
+    },
+    {
+      "routine": {
+        "startTime": "15:48",
+        "endTime": "16:15",
+        "priority": "low"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 15,
+        "duration_min": 27,
+        "weekday": 1,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3440199305011854
+    },
+    {
+      "routine": {
+        "startTime": "10:02",
+        "endTime": "12:14",
+        "priority": "medium"
+      },
+      "weekday": 3,
+      "features": {
+        "early": 0,
+        "start_hour": 10,
+        "duration_min": 132,
+        "weekday": 3,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.1362656831623213
+    },
+    {
+      "routine": {
+        "startTime": "09:15",
+        "endTime": "12:10",
+        "priority": "high"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 9,
+        "duration_min": 175,
+        "weekday": 6,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.13111303232822055
+    },
+    {
+      "routine": {
+        "startTime": "12:31",
+        "endTime": "13:11",
+        "priority": "high"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 40,
+        "weekday": 2,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.14985380514731061
+    },
+    {
+      "routine": {
+        "startTime": "17:27",
+        "endTime": "18:14",
+        "priority": "low"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 17,
+        "duration_min": 47,
+        "weekday": 2,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3417566866314212
+    },
+    {
+      "routine": {
+        "startTime": "20:57",
+        "endTime": "23:15",
+        "priority": "medium"
+      },
+      "weekday": 5,
+      "features": {
+        "early": 0,
+        "start_hour": 20,
+        "duration_min": 138,
+        "weekday": 5,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14178769050882023
+    },
+    {
+      "routine": {
+        "startTime": "15:42",
+        "endTime": "18:14",
+        "priority": "medium"
+      },
+      "weekday": 0,
+      "features": {
+        "early": 0,
+        "start_hour": 15,
+        "duration_min": 152,
+        "weekday": 0,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14000209369878333
+    },
+    {
+      "routine": {
+        "startTime": "21:22",
+        "endTime": "00:21",
+        "priority": "high"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 21,
+        "duration_min": 179,
+        "weekday": 1,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.1429320785752019
+    },
+    {
+      "routine": {
+        "startTime": "22:54",
+        "endTime": "01:45",
+        "priority": "medium"
+      },
+      "weekday": 0,
+      "features": {
+        "early": 0,
+        "start_hour": 22,
+        "duration_min": 171,
+        "weekday": 0,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14337500327118438
+    },
+    {
+      "routine": {
+        "startTime": "22:07",
+        "endTime": "22:49",
+        "priority": "high"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 22,
+        "duration_min": 42,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.1562718591236937
+    },
+    {
+      "routine": {
+        "startTime": "09:42",
+        "endTime": "11:57",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 9,
+        "duration_min": 135,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.13457341926480237
+    },
+    {
+      "routine": {
+        "startTime": "15:38",
+        "endTime": "16:31",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 15,
+        "duration_min": 53,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.1474980027976206
+    },
+    {
+      "routine": {
+        "startTime": "08:37",
+        "endTime": "08:57",
+        "priority": "high"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 20,
+        "weekday": 6,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.14597217084723796
+    },
+    {
+      "routine": {
+        "startTime": "10:37",
+        "endTime": "12:57",
+        "priority": "high"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 10,
+        "duration_min": 140,
+        "weekday": 1,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.13859440246428695
+    },
+    {
+      "routine": {
+        "startTime": "22:44",
+        "endTime": "01:16",
+        "priority": "low"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 22,
+        "duration_min": 152,
+        "weekday": 4,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3264714631156368
+    },
+    {
+      "routine": {
+        "startTime": "12:39",
+        "endTime": "14:43",
+        "priority": "high"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 124,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.1396740124375801
+    },
+    {
+      "routine": {
+        "startTime": "16:24",
+        "endTime": "17:48",
+        "priority": "low"
+      },
+      "weekday": 6,
+      "features": {
+        "early": 0,
+        "start_hour": 16,
+        "duration_min": 84,
+        "weekday": 6,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.32835463796075187
+    },
+    {
+      "routine": {
+        "startTime": "21:29",
+        "endTime": "22:45",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 21,
+        "duration_min": 76,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.149789139465822
+    },
+    {
+      "routine": {
+        "startTime": "10:12",
+        "endTime": "11:08",
+        "priority": "low"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 10,
+        "duration_min": 56,
+        "weekday": 4,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3277927084051502
+    },
+    {
+      "routine": {
+        "startTime": "10:23",
+        "endTime": "12:07",
+        "priority": "high"
+      },
+      "weekday": 5,
+      "features": {
+        "early": 0,
+        "start_hour": 10,
+        "duration_min": 104,
+        "weekday": 5,
+        "priority_low": 0,
+        "priority_medium": 0
+      },
+      "expected": 0.13951907977601016
+    },
+    {
+      "routine": {
+        "startTime": "08:31",
+        "endTime": "11:13",
+        "priority": "low"
+      },
+      "weekday": 2,
+      "features": {
+        "early": 0,
+        "start_hour": 8,
+        "duration_min": 162,
+        "weekday": 2,
+        "priority_low": 1,
+        "priority_medium": 0
+      },
+      "expected": 0.3081357928090116
+    },
+    {
+      "routine": {
+        "startTime": "12:03",
+        "endTime": "14:11",
+        "priority": "medium"
+      },
+      "weekday": 1,
+      "features": {
+        "early": 0,
+        "start_hour": 12,
+        "duration_min": 128,
+        "weekday": 1,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.1395011644005231
+    },
+    {
+      "routine": {
+        "startTime": "16:32",
+        "endTime": "16:50",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 16,
+        "duration_min": 18,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.1520569666052959
+    },
+    {
+      "routine": {
+        "startTime": "20:35",
+        "endTime": "23:14",
+        "priority": "medium"
+      },
+      "weekday": 4,
+      "features": {
+        "early": 0,
+        "start_hour": 20,
+        "duration_min": 159,
+        "weekday": 4,
+        "priority_low": 0,
+        "priority_medium": 1
+      },
+      "expected": 0.14032627522283872
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Smart Routine",
+  "short_name": "Routine",
+  "description": "Daily routines anchored to prayer times — works offline on low-data connections.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6e3f",
+  "lang": "bn",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

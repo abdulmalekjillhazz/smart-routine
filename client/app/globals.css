@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The Bangla font is served from this site by @fontsource (imported in the layouts). Fallbacks cover the first paint. */
+body {
+  background: #FFFBF0;
+  color: #1B1B1F;
+  font-family: 'Noto Sans Bengali', 'Nirmala UI', 'Vrinda', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid #0F3D91;
+  outline-offset: 2px;
+}

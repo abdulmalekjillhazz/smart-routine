@@ -1,0 +1,135 @@
+name: CI
+
+# Every pull request runs these jobs. Branch protection must require all of them before merging (see docs/runbooks/ci-branch-protection.md).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Lint, unit tests, coverage floor
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Unit tests with coverage floor (fails below the floor)
+        run: npm run test:coverage
+
+  integration:
+    name: Integration tests against real MongoDB
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    services:
+      mongo:
+        image: mongo:7
+        ports:
+          - 27017:27017
+    env:
+      MONGODB_URI_TEST: mongodb://127.0.0.1:27017/smart-routine-ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Wait for MongoDB
+        run: |
+          for i in $(seq 1 30); do
+            (echo > /dev/tcp/127.0.0.1/27017) >/dev/null 2>&1 && exit 0
+            sleep 1
+          done
+          echo "MongoDB did not start" && exit 1
+      - name: Integration suites (one at a time, they share the test database)
+        run: npm run test:integration
+
+  ml:
+    name: ML unit tests (Python) and parity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r ml/requirements.txt
+      - run: python -m unittest discover -s ml/tests
+      - run: npm ci
+      - name: Python and JavaScript parity
+        run: npm test -w shared
+
+  security:
+    name: Dependency audit (fails on high or critical in production code)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Production dependencies
+        run: npm audit --omit=dev --audit-level=high
+      - name: All dependencies (report only at moderate; fails on high)
+        run: npm audit --audit-level=high
+
+  seo:
+    name: Public site SEO checks (built site)
+    if: ${{ hashFiles('client/package.json') != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build -w client
+      - name: Start the built site
+        run: |
+          npm run start -w client > /tmp/web.log 2>&1 &
+          for i in $(seq 1 30); do curl -s -o /dev/null http://localhost:3000/en && exit 0; sleep 1; done
+          cat /tmp/web.log; exit 1
+      - name: Run SEO checks
+        run: npm run seo:check -w client
+        env:
+          BASE_URL: http://localhost:3000
+      - name: Contrast check (WCAG 2.2 AA)
+        run: npm run contrast -w client
+
+  web-budgets:
+    name: Performance budgets (runs once client exists)
+    if: ${{ hashFiles('client/package.json') != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build -w client
+      - name: Lighthouse mobile budgets
+        run: npx --yes @lhci/cli@0.14.0 autorun --config=lighthouserc.json
