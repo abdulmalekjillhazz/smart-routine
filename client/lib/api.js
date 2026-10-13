@@ -27,3 +27,27 @@ export async function getLesson(slug) {
     return { ok: false, reason: 'unavailable' };
   }
 }
+
+export async function getStories() {
+  try {
+    const res = await fetch(`${API}/api/stories`, { next: { revalidate: REVALIDATE } });
+    if (!res.ok) return { ok: false, reason: 'unavailable', stories: [] };
+    const body = await res.json();
+    return { ok: true, stories: body.stories ?? [] };
+  } catch {
+    return { ok: false, reason: 'unavailable', stories: [] };
+  }
+}
+
+export async function getStory(slug) {
+  if (!isSafeSlug(slug)) return { ok: false, reason: 'not-found' };
+  try {
+    const res = await fetch(`${API}/api/stories/${slug}`, { next: { revalidate: REVALIDATE } });
+    if (res.status === 404) return { ok: false, reason: 'not-found' };
+    if (!res.ok) return { ok: false, reason: 'unavailable' };
+    const body = await res.json();
+    return { ok: true, story: body.story };
+  } catch {
+    return { ok: false, reason: 'unavailable' };
+  }
+}
